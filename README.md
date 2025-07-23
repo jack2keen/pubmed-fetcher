@@ -17,7 +17,7 @@ This is a command-line tool to search PubMed for research papers and identify pa
 1. Make sure Python 3.12+ and Poetry(https://python-poetry.org) are installed.
 2. Clone the repository and install dependencies:
 
-```bash
+
 git clone https://github.com/jack2keen/pubmed-fetcher.git
 cd pubmed-fetcher
 poetry install
