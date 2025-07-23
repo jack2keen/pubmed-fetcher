@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pubmed_fetcher"
+version = "0.1.0"
+description = "CLI to fetch research papers using pubmed api with non academic authors"
+authors = ["jack2keen <someshkumarp3@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "papers" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+requests = "^2.32.4"
+typer = "^0.16.0"
+pandas = "^2.3.1"
+beautifulsoup4 = "^4.13.4"
+biopython = "^1.85"
+lxml = "^6.0.0"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"  
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
