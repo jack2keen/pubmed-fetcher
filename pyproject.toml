@@ -18,7 +18,7 @@ biopython = "^1.85"
 lxml = "^6.0.0"
 
 [tool.poetry.scripts]
-get-papers-list = "cli:main"  
+get-papers-list = "cli:app"  
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"

@@ -1,3 +1,23 @@
+def extract_non_academic_authors(article: dict) -> list[str]:
+    non_academic = []
+
+    authors = article.get("Authors", [])
+    for author in authors:
+        name = author.get("Name", "")
+        affiliation = author.get("Affiliation", "")
+        email = author.get("Email", "")
+
+        if (
+            any(keyword in affiliation.lower() for keyword in ["inc", "llc", "gmbh", "pvt", "ltd", "company", "corporation", "corp"])
+            or any(domain in email.lower() for domain in ["@gmail.", "@yahoo.", "@hotmail.", "@outlook."])
+        ):
+            non_academic.append(f"{name} ({affiliation})")
+
+    return non_academic
+
+
+
+
 def extract_authors_and_affiliations(pubmed_article):
     """
     Extracts authors and their affiliations from a single PubMed article.

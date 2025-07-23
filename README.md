@@ -43,11 +43,13 @@ Affiliation text doesn't include terms like "university", "college", or "institu
 
 Tools and Libraries Used :
 
-Typer
-BioPython
-BeautifulSoup
-pandas
-Poetry
+Typer : https://typer.tiangolo.com/
+BioPython : https://biopython.org/
+BeautifulSoup : https://www.crummy.com/software/BeautifulSoup/
+pandas : https://pandas.pydata.org/
+Poetry : https://python-poetry.org/
+TestPyPI : https://test.pypi.org/ 
+
 
 Author
 Somesh Kumar Patel – someshkumarp3@gmail.com
